@@ -46,14 +46,14 @@ function Header() {
       >
         <div className='app__header-contact'>
           <a href='#contact'>
-            <button className='app__header-button '>Contact</button>
+            <button className='app__header-button p-text-white'>Contact</button>
           </a>
           
         </div>
 
         <div className='app__header-resume'>
           <a href='aygenyucelcv.pdf' download= 'Aygen_Yucel_Resume.pdf'>
-            <button className='app__header-button'>Download Resume</button>
+            <button className='app__header-button p-text-white'>Download Resume</button>
           </a>
         </div>
 

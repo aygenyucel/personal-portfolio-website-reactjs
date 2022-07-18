@@ -72,8 +72,8 @@
         border-radius: 10px;
         flex-direction: row;
         width: auto;
-        background: linear-gradient(to bottom, rgba(225,229,238, 0.4) 0%, rgba(0,0,0,0) 100%);
-
+        // background: linear-gradient(to bottom, rgba(225,229,238, 0.4) 0%, rgba(0,0,0,0) 100%);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     }
 
     .badge-cmp-text {
@@ -150,6 +150,7 @@
   width: 100%;
   height: 100%;
   background: rgba(124, 148, 115, 0.8);
+  color: var(--green1-color);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   
@@ -160,6 +161,7 @@
   width: 35px;
   height: 35px;
   background: #ffffff15;
+  color: var(--white-color);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 20px;
