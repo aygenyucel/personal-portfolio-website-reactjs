@@ -5,6 +5,7 @@ import { urlFor, client } from '../../client';
 import { ArrowBackOutlined } from '@mui/icons-material';
 import { AppWrap, MotionWrap } from '../../wrapper';
 
+
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
