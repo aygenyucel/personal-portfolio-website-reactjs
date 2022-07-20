@@ -27,8 +27,8 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
                 d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"
                 class="shape-fill"
               ></path>
-            </svg> */}
-          </div>
+            </svg>
+          </div> */}
         </div>
 
 
