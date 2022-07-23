@@ -14,7 +14,10 @@
     }
 }
 
+
+
 .app__header {
+
     flex: 1;
     width: 100%;
     height: 100%;
@@ -34,6 +37,7 @@
         padding: 6rem 1rem 2rem;
     }
 }
+
 
 .app__header-info {
     flex: 1;
@@ -69,7 +73,7 @@
         overflow-x: auto;
         padding: 1rem 6rem;
         border: var(--white-color);
-        border-radius: 10px;
+        border-radius: 20px;
         flex-direction: row;
         width: auto;
         // background: linear-gradient(to bottom, rgba(225,229,238, 0.4) 0%, rgba(0,0,0,0) 100%);
@@ -85,8 +89,9 @@
 
         h1 {
             font-size: 2.75rem;
-            font-weight: 800;
+            font-weight: 400;
             text-transform: uppercase;
+            color: var(--secondary-color);
         }
     }
 
@@ -137,12 +142,15 @@
 } 
 .app__header-button::after,
 .app__header-button::before {
+
   content: '';
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -99999;
   transition: all .4s;
+  color: white;
+  text-decoration: none;
 }
 
 .app__header-button::before {
@@ -150,8 +158,8 @@
   width: 100%;
   height: 100%;
   background: rgba(124, 148, 115, 0.8);
-  color: var(--green1-color);
-  border-radius: 10px;
+  color: white;
+  border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   
 }

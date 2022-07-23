@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-  --font-base: "DM Sans", sans-serif;
+  --font-base: 'Montserrat', sans-serif;
+  /* --font-base: "DM Sans", sans-serif; */
 
   --primary-color: #edf0f6;
   --secondary-color: #7C9473;
@@ -12,7 +13,7 @@
   --lightGrey-color: rgb(221, 225, 234);
 
   --darkGrey-color: #41464f ;
-  --grey1-color: rgb(232, 234, 230);
+  --grey1-color: rgb(242,245,239);
   --grey2-color: #CDD0CB;
 
   --green1-color: #e6ede3;

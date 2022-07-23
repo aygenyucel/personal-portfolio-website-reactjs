@@ -1,16 +1,30 @@
 .app__navbar {
-    width: 100%;
+    position: fixed;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    
-    padding: 1rem 2rem;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 2rem;
+    z-index: 8;
+
+
+    width: 100%;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px); //for old browsers
     border: 1px solid rgba(255, 255, 255, 0.18);
-    position: fixed;
-    z-index: 6;
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // height: 80px;
+        padding: 0 2rem;
+    }
+    @media screen and (max-width:900px) {
+        flex-direction: row-reverse;
+    }
+
 }
 
 .app__navbar-logo {
@@ -19,7 +33,6 @@
     align-items: center;
     
     left:30px;
-    position: relative;
 
     img {
         width: 100%;
@@ -29,72 +42,230 @@
             width: 180px;
             height: 40px;
         }
-        @media screen and (max-width:900px) {
-            position: relative;
-            
-        }
+    }
+    @media screen and (max-width:900px) {
+        display: none;
     }
 }
-
 .app__navbar-links {
-    position: fixed;
     width: 100%;
     left: 0;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     list-style: none;
+    position: absolute;
+
     
     li {
+        // display:flex;  
         margin: 0 1rem;
         cursor: pointer;
 
         flex-direction: column;
-
-        div {
-            width: 5px;
-            height: 5px;
-            background: transparent;
-            border-radius: 50%;
-            margin-bottom: 5px;
-        }
-
+        
         a {
-            color: var(--gray-color);
+            
+            margin: 0 1.5rem;
+            color: var(--secondary-color);
             text-decoration: none;
-            flex-direction: column;
+            display: inline-block;
+            position: relative;
+            color: var(--green5-color);
             text-transform: uppercase;
             font-weight: 500;
 
-            transition: all 0.3s ease-in-out;
-
-            &:hover {
-                color: var(--secondary-color);
-            }
-        }
-
-        &:hover {
-            div {
-                background: var(--green6-color);
-            }
             
+            &:hover {
+                color: var(--green7-color);
+                
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #517755;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            &:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
         }
     }
-
     @media screen and (max-width: 900px) {
-        display: none;
-    }
+                display: none;
+            }
 }
 
-.app__navbar-menu {
+// .nav-btn {
+//     padding: 5px;
+//     cursor: pointer;
+//     background: transparent;
+//     border: none;
+//     outline: none;
+//     color: var(--green3-color);
+//     visibility: hidden;
+//     opacity: 0;
+    
+// }
 
+@media screen and (max-width: 900px) {
+    // .nav-btn {
+    //     visibility: visible;
+    //     opacity: 1;
+
+    //     font-size: 1.8rem;
+    // }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--grey-color);
+        transition: 1s;
+        transform: translateY(-100vh);
+        flex-direction: column;
+
+        // .nav-close-btn {
+        //     position: absolute;
+        //     top: 2rem;
+        //     right: 2rem;
+
+        // }
+        a {
+            font-size: 1.8rem;
+        }
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .app__navbar {
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+    
+//     padding: 1rem 2rem;
+//     background: rgba(255, 255, 255, 0.25);
+//     backdrop-filter: blur(4px);
+//     -webkit-backdrop-filter: blur(4px); //for old browsers
+//     border: 1px solid rgba(255, 255, 255, 0.18);
+//     position: fixed;
+//     z-index: 6;
+// }
+
+// .app__navbar-logo {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+    
+//     left:30px;
+//     position: relative;
+
+//     img {
+//         width: 100%;
+//         height: 20px;
+
+//         @media screen and (min-width:2000px) {
+//             width: 180px;
+//             height: 40px;
+//         }
+//         @media screen and (max-width:900px) {
+//             position: relative;
+            
+//         }
+//     }
+// }
+
+// .app__navbar-links {
+//     position: fixed;
+//     width: 100%;
+//     left: 0;
+//     flex: 1;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     list-style: none;
+    
+//     li {
+//         margin: 0 1rem;
+//         cursor: pointer;
+
+//         flex-direction: column;
+
+//         div {
+//             width: 5px;
+//             height: 5px;
+//             background: transparent;
+//             border-radius: 50%;
+//             margin-bottom: 5px;
+//         }
+
+//         a {
+//             color: var(--gray-color);
+//             text-decoration: none;
+//             flex-direction: column;
+//             text-transform: uppercase;
+//             font-weight: 500;
+
+//             transition: all 0.3s ease-in-out;
+
+//             &:hover {
+//                 color: var(--secondary-color);
+//             }
+//         }
+
+//         &:hover {
+//             div {
+//                 background: var(--green6-color);
+//             }
+            
+//         }
+//     }
+
+//     @media screen and (max-width: 900px) {
+//         display: none;
+//     }
+// }
+
+.app__navbar-menu {
+    
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    
     position: relative;
     display: flex;
+    
     
     justify-content: center;
     align-items: center;
