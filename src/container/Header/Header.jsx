@@ -20,12 +20,8 @@ function Header() {
 
   return (
   
-    
     <div className='app__header app__flex'>
 
-  
-
-      
       <motion.div
         whileInView={{ y: [120,0], opacity: [0, 1] }}
         transition={{ duration: 2 }}
@@ -33,7 +29,6 @@ function Header() {
       >
         <div className='app__header-badge'>
           <div className='badge-cmp app_flex'>
-            {/* <span>👋</span> */}
             <div className='badge-cmp-text' >
               <p className='p-text'>Hello, I am</p>
               <h1 className='p-text'>Aygen</h1>
@@ -70,12 +65,8 @@ function Header() {
 
       
     </div>
-    
-    
-      
+
   )
 }
-
-
 export default AppWrap(Header, 'home');
 

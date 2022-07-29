@@ -7,9 +7,6 @@ import { Navbar } from './components';
 import './App.scss';
 
 
-
-
-
 function App() {
   
 
