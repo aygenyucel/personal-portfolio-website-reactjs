@@ -102,7 +102,7 @@
         padding-bottom: 0.8rem;
         padding-right: 2rem;
         padding-left: 2rem;
-        a {
+        a, a:hover, a:focus, a:active, a:visited {
             text-decoration: none;
         }
     }
