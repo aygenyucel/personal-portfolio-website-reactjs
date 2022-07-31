@@ -54,6 +54,7 @@ function Skills() {
             >
               <div className='app__experiences-year'>
                 <p className='bold-text'>{experience.year}</p>
+                
               </div>
               <motion.div
                 className='app__experiences-works'
@@ -69,7 +70,7 @@ function Skills() {
                       key={work.name}
                     >
                       <h4 className='bold-text'>{work.name}</h4>
-                      <p className='p-text'>{work.company}</p>
+                      <p className='p-text-dark'>{work.company}</p>
                     </motion.div> 
         
                     <ReactToolTip
@@ -97,5 +98,5 @@ function Skills() {
 export default AppWrap(
   MotionWrap(Skills, 'app__skills'),
   'skills',
-  'app__green2bg'
+  'app__darkbluebg'
 );

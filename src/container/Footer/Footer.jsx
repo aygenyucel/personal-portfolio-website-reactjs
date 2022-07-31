@@ -39,39 +39,39 @@ function Footer() {
   return (
     <>
     
-      <h2 className='head-text-green'>CONTACT ME!</h2>
+      <h2 className='head-text'>CONTACT ME!</h2>
       <div className='app__footer-cards'>
         <div className='app__footer-card'>
           <img src={images.email} alt="email" />
-          <a href="mailto:aygenyucel@outlook.com" className='p-text-green'>aygenyucel@outlook.com</a>
+          <a href="mailto:aygenyucel@outlook.com" className='p-text-dark'>aygenyucel@outlook.com</a>
         </div>
         <div className='app__footer-card'>
           <img src={images.linkedin} alt="linkedin" />
-          <a href="https://linkedin.com/in/aygenyucel" target='_blank' className='p-text-green'>Contact me on LinkedIn</a>
+          <a href="https://linkedin.com/in/aygenyucel" target='_blank' className='p-text-dark'>Contact me on LinkedIn</a>
         </div>
       </div>
 
     {!isFormSubmitted ? 
       <div className='app__footer-form app__flex'>
         <div className='app__flex'>
-          <input className='p-text-green' type="text" placeholder='Your Name' name='name' value={name} onChange={handleChangeInput} />          
+          <input className='p-text-dark' type="text" placeholder='Your Name' name='name' value={name} onChange={handleChangeInput} />          
         </div>
         <div className='app__flex'>
-          <input className='p-text-green' type="email" placeholder='Your Email' name='email' value={email} onChange={handleChangeInput} />          
+          <input className='p-text-dark' type="email" placeholder='Your Email' name='email' value={email} onChange={handleChangeInput} />          
         </div>
         <div className=''>
           <textarea 
-            className='p-text-green' 
+            className='p-text-dark' 
             placeholder='Your Message' 
             name='message'
             value={message}
             onChange={handleChangeInput}
           />
         </div>
-        <button type='button' className='p-text-green' onClick={handleSubmit}>{loading ? 'Sending' : 'Send Message'}</button>
+        <button type='button' className='app__footer-button p-text-dark' onClick={handleSubmit}>{loading ? 'Sending' : 'Send Message'}</button>
       </div>
       : <div>
-        <h3 className='p-text-green'>Thank you for getting in touch!</h3>
+        <h3 className='p-text-dark'>Thank you for getting in touch!</h3>
       </div> }
 
     </>
@@ -80,5 +80,6 @@ function Footer() {
 
 export default AppWrap (
   MotionWrap (Footer, 'app__footer'),
-  'contact'
+  'contact',
+  'app__lightbluebg'
 )

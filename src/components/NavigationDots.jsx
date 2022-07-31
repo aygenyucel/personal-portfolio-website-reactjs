@@ -9,7 +9,7 @@ function NavigationDots({ active }) {
                 href={`#${item}`}
                 key= {item + index}
                 className='app__navigation-dot'
-                style={active === item ? { backgroundColor: 'var(--green5-color)' } : { backgroundColor: '#fff'} }
+                style={active === item ? { backgroundColor: 'var(--blue1-color)' } : { backgroundColor: 'var(--black-color)'} }
             />    
         ))}
     </div>

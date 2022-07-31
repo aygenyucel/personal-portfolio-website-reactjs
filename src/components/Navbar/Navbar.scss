@@ -7,7 +7,6 @@
     padding: 0 2rem;
     z-index: 8;
 
-
     width: 100%;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(4px);
@@ -61,23 +60,23 @@
     li { 
         margin: 0 1rem;
         cursor: pointer;
-
         flex-direction: column;
+
         
         a {
             
             margin: 0 1.5rem;
-            color: var(--secondary-color);
             text-decoration: none;
             display: inline-block;
             position: relative;
-            color: var(--green5-color);
+            color: var(--black-color);
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 400;
 
             
             &:hover {
-                color: var(--green7-color);
+                color: var(--black-color);
+                font-weight: 800;
                 
             }
             &:after {
@@ -88,7 +87,7 @@
                 height: 2px;
                 bottom: 0;
                 left: 0;
-                background-color: #517755;
+                background-color: var(--black-color);
                 transform-origin: bottom right;
                 transition: transform 0.25s ease-out;
             }
@@ -142,7 +141,7 @@
     
     justify-content: center;
     align-items: center;
-    background: var(--secondary-color);
+    background: var(--black-color);
 
     svg {
         width: 70%;
@@ -167,8 +166,7 @@
         align-items: flex-end;
         flex-direction: column;
 
-        background: url('../../assets/bgWhite.png');
-        background-color: var(--white-color);
+        background-color: var(--blue1-color);
         background-size: cover;
         background-repeat: repeat;
 
@@ -177,7 +175,7 @@
         svg {
             width: 35px;
             height: 35px;
-            color: var(--secondary-color);
+            color: var(--purple4-color);
             margin: 0.5rem 1rem;
         }
 
@@ -205,7 +203,7 @@
                     transition: all 0.3s ease-in-out;
 
                     &:hover {
-                        color: var(--secondary-color);
+                        color: var(--purple2-color);
                     }
                 }
             }

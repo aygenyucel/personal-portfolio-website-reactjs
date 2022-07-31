@@ -40,12 +40,12 @@ function Work() {
 
   return (
     <>
-      <h2 className="head-text-green">MY PROJECTS</h2>
+      <h2 className="head-text">MY PROJECTS</h2>
 
       <div className='app__work-filter'>
         {['UI/UX', 'REACT JS', 'HTML', 'JAVACRIPT', 'CSS', 'SCSS', 'ALL'].map((item, index) => 
           <div 
-            className={`app__work-filter-item app__flex p-text-green ${activeFilter === item ? "item-active" : ""}`}
+            className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
             key={index}
             onClick={() => handleWorkFilter(item)}
           >
@@ -93,11 +93,11 @@ function Work() {
             </div>
 
             <div className='app__work-content app__flex'>
-              <h4 className='bold-text-green'>{work.title}</h4>
-              <p className='p-text' style={{marginTop: 10}}>{work.description}</p>
+              <h4 className='bold-text'>{work.title}</h4>
+              <p className='p-text-dark app__work-desc'>{work.description}</p>
 
               <div className='app__work-tag app__flex'>
-                <p className='p-text'>{work.tags[0]}</p>
+                <p className='p-text-dark'>{work.tags[0]}</p>
               </div>
             </div>
           </div>
@@ -113,5 +113,5 @@ function Work() {
 export default AppWrap(
   MotionWrap(Work, 'app__works'),
   'work',
-  'app__grey1bg'
+  'app__lightbluebg'
 );

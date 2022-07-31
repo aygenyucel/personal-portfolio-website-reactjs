@@ -1,28 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Philosopher&display=swap');
 :root {
-  --font-base: 'Montserrat', sans-serif;
-
-  --primary-color: #edf0f6;
-  --secondary-color: #7C9473;
+  --font-base: 'Philosopher', sans-serif;
   --black-color: #030303;
-  --gray-color: #6b7688;
-  --brown-color: #46364a;
   --white-color: rgb(255, 255, 255);
-  --lightGrey-color: rgb(221, 225, 234);
 
-  --darkGrey-color: #41464f ;
-  --grey1-color: rgb(242,245,239);
-  --grey2-color: #CDD0CB;
-
-  --green1-color: #e6ede3;
-  --green2-color: #bdd2b6;
-  --green3-color: #A2B29F;
-  --green4-color: rgb(124, 148, 115);
-  --green5-color: #798777;
-  --green6-color: #80AC7B;
-  --green7-color: #446a46;
-
+  --blue1-color: rgb(241, 241, 241);
+  --blue2-color: #7980e9;
+  --blue3-color: #d1d2ea;
+  --blue4-color: #959ed3; 
+  --blue5-color: #adb4de; 
+  
+  --purple1-color: #483462;
+  --purple2-color:#dda1ed;
+  --purple3-color: #3500ac;
+  --purple4-color: #3e3754;   
 }
 
 * {
