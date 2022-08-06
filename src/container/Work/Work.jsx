@@ -43,7 +43,7 @@ function Work() {
       <h2 className="head-text">MY PROJECTS</h2>
 
       <div className='app__work-filter'>
-        {['UI/UX', 'REACT JS', 'HTML', 'JAVACRIPT', 'CSS', 'SCSS', 'ALL'].map((item, index) => 
+        {['UI/UX', 'REACT JS', 'HTML', 'JAVASCRIPT', 'CSS', 'SCSS', 'ALL'].map((item, index) => 
           <div 
             className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
             key={index}
@@ -78,7 +78,7 @@ function Work() {
                   >
                     <AiFillEye />
                   </motion.div>
-                </a>
+                </a>              
                 <a href={work.codeLink} target='_blank' rel='noreferrer'>
                   <motion.div
                     whileInView={{ scale: [0, 1]}}
