@@ -58,7 +58,6 @@
         cursor: pointer;
         transition: all 0.3s ease;
 
-        z-index: 0;
 
         &:hover {
             box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
@@ -83,6 +82,7 @@
     width: 100%;
     height: 230px;
     position: relative;
+    
     
 
     img {
@@ -110,7 +110,11 @@
     border-radius: 0.5rem;
     opacity: 0;
     transition: all 0.3s ease;
-    z-index: 1999;
+
+    &:hover {
+        opacity: 1;
+        transition: 1s;
+    }
     
 
     div {
@@ -124,6 +128,7 @@
         font-weight: 800;
         cursor: pointer;
         transition: all 0.3s ease;
+        
         
 
         svg {

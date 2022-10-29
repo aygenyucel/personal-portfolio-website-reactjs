@@ -26,11 +26,12 @@ function Skills() {
   
   return (
     <>
-      <h2 className="head-text">SKILLS & EXPERIENCE</h2>
+      <h2 className="head-text">SKILLS</h2>
 
       <div className='app__skills-container'>
         <motion.div className='app__skills-list'>
           {skills?.map((skill, index) => (
+            
             <motion.div
               whileInView={{opacity: [0, 1]}}
               transition={{duration: 0.5}}
@@ -45,13 +46,14 @@ function Skills() {
           ))}
         </motion.div>
 
-        <motion.div className='app__experiences-list'>
+        {/* <motion.div className='app__experiences-list'>
 
           {experiences?.map((experience) => (
             <motion.div
               className='app__experiences-item'
               key={experience.year}
             >
+              <div>{experience.year}</div>
               <div className='app__experiences-year'>
                 <p className='bold-text'>{experience.year}</p>
                 
@@ -69,6 +71,7 @@ function Skills() {
                       data-for={work.name}
                       key={work.name}
                     >
+                      <div>{work.name}</div>
                       <h4 className='bold-text'>{work.name}</h4>
                       <p className='p-text-dark'>{work.company}</p>
                     </motion.div> 
@@ -88,7 +91,7 @@ function Skills() {
           
           ))}
 
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </>
