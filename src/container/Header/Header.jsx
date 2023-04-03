@@ -27,13 +27,13 @@ function Header() {
       <div className='app__header-badge'>
         <div className='badge-cmp app_flex'>
           <div className='badge-cmp-text' >
-            <p className='p-text-light'>Hello, I am</p>
-            <h1 className='p-text-light'>Aygen</h1>
+              <p className='p-text-light'>Hello, I am</p>
+              <h1 className='p-text-light'>Aygen Yucel</h1>
           </div>
         </div>
 
         <div className='tag-cmp app__flex'>
-          <p className='p-text-light'>Front-end Developer</p>
+          <p className='p-text-light'>Full Stack Web Developer</p>
         </div>
       </div>
 
@@ -52,9 +52,9 @@ function Header() {
         </div>
 
         <div className='app__header-resume'>
-          <a href='aygenyucelcv.pdf' download= 'Aygen_Yucel_Resume.pdf'>
+          {/* <a href='aygenyucelcv.pdf' download= 'Aygen_Yucel_Resume.pdf'> */}
             <button className='app__header-button p-text-light'>Download Resume</button>
-          </a>
+          {/* </a> */}
         </div>
       
       </motion.div>

@@ -45,7 +45,7 @@ function Work() {
       <h2 className="head-text">MY PROJECTS</h2>
 
       <div className='app__work-filter'>
-        {['UI/UX', 'REACT JS', 'HTML', 'JAVASCRIPT', 'CSS', 'SCSS', 'ALL'].map((item, index) => 
+        {['ALL', 'REACT JS', 'JAVASCRIPT', 'MONGODB', 'REDUX', 'EXPRESS JS', 'NODE JS', 'BOOTSTRAP', 'WEBRTC', 'SASS'].map((item, index) => 
 
           <div 
             className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : ""}`}

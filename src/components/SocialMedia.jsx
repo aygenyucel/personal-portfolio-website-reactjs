@@ -1,5 +1,8 @@
 import React from 'react';
-import { BsTwitter, BsGithub} from 'react-icons/bs';
+import { BsTwitter, BsGithub, BsStackOverflow} from 'react-icons/bs';
+import { ImStackoverflow} from 'react-icons/im';
+
+
 
 import { FaLinkedinIn } from 'react-icons/fa';
 
@@ -12,11 +15,11 @@ function SocialMedia() {
           
         </div>
         <div>
-            <a href="https://twitter.com/yucelaygen" target='_blank'><BsTwitter /></a>
-        </div>
-        <div>
           <a href="https://github.com/aygenyucel" target='_blank'><BsGithub /></a>
             
+        </div>
+        <div>
+            <a href="https://stackoverflow.com/users/19501613/aygen-yucel" target='_blank'><ImStackoverflow /></a>
         </div>
     </div>
   )
