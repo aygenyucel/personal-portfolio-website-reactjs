@@ -52,9 +52,9 @@ function Header() {
         </div>
 
         <div className='app__header-resume'>
-          {/* <a href='aygenyucelcv.pdf' download= 'Aygen_Yucel_Resume.pdf'> */}
+          <a href='aygenyucelcv.pdf' download= 'Aygen_Yucel_Resume.pdf'>
             <button className='app__header-button p-text-light'>Download Resume</button>
-          {/* </a> */}
+          </a>
         </div>
       
       </motion.div>

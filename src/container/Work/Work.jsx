@@ -5,6 +5,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Work.scss';
 import { ListItemIcon } from '@mui/material';
+import { images } from '../../constants';
 
 
 function Work() {
@@ -45,7 +46,7 @@ function Work() {
       <h2 className="head-text">MY PROJECTS</h2>
 
       <div className='app__work-filter'>
-        {['ALL', 'REACT JS', 'JAVASCRIPT', 'MONGODB', 'REDUX', 'EXPRESS JS', 'NODE JS', 'BOOTSTRAP', 'WEBRTC', 'SASS'].map((item, index) => 
+        {['ALL', 'REACT JS', 'VANILLA JS', 'JAVASCRIPT', 'MONGODB', 'REDUX', 'EXPRESS JS', 'NODE JS', 'BOOTSTRAP', 'WEBRTC', 'SCSS'].map((item, index) => 
 
           <div 
             className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
@@ -136,6 +137,13 @@ function Work() {
         )}
 
       </motion.div>
+      <a href="https://github.com/aygenyucel" target='_blank' className='check-github-a'>
+        <div className='check-github-div'>
+          <div>Check my GitHub for my other projects! </div>
+          <img src={images.rightArrow} alt="right-arrow-icon" className='right-arrow-icon' />
+        </div>
+      </a>
+      
 
     </>
     
