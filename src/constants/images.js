@@ -19,6 +19,7 @@ import hobbies from '../assets/hobbies.gif';
 import frontend from '../assets/frontend.gif';
 import nature from '../assets/nature.gif';
 import team from '../assets/team.gif';
+import rightArrow from '../assets/right-arrow-icon.png'
 
 
 export default {
@@ -42,5 +43,6 @@ export default {
   hobbies,
   frontend,
   nature,
-  team
+  team,
+  rightArrow
 };

@@ -7,6 +7,9 @@
 .pnp.js
 ./env
 
+/backend_sanity
+backend_sanity
+
 .env
 
 # testing

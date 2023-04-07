@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Work.scss';
+import { ListItemIcon } from '@mui/material';
+import { images } from '../../constants';
 
 
 function Work() {
@@ -38,17 +40,21 @@ function Work() {
     },500)
   }
 
+
   return (
     <>
-      <h2 className="head-text-green">MY PROJECTS</h2>
+      <h2 className="head-text">MY PROJECTS</h2>
 
       <div className='app__work-filter'>
-        {['UI/UX', 'REACT JS', 'HTML', 'JAVACRIPT', 'CSS', 'SCSS', 'ALL'].map((item, index) => 
+        {['ALL', 'REACT JS', 'VANILLA JS', 'JAVASCRIPT', 'MONGODB', 'REDUX', 'EXPRESS JS', 'NODE JS', 'BOOTSTRAP', 'WEBRTC', 'SCSS'].map((item, index) => 
+
           <div 
-            className={`app__work-filter-item app__flex p-text-green ${activeFilter === item ? "item-active" : ""}`}
+            className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
             key={index}
             onClick={() => handleWorkFilter(item)}
           >
+           {/* <div>{item} : {index.toString()}</div> */}
+          
             {item}
             
           </div>
@@ -64,7 +70,34 @@ function Work() {
           <div className='app__work-item app__flex' key={index}>
             <div className='app__work-img app__flex'>
               <img src={urlFor(work.imgUrl)} alt={work.name} />
-              <motion.div
+              <div className='app__work-hover app__flex'>
+                <a href={work.projectLink} target='_blank' rel='noreferrer'>
+                  <motion.div
+                    whileInView={{ scale: [0, 1]}}
+                    whileHover={{ scale: [1, 0.9]}}
+                    transition={{ duration: 0.25 }}
+                    className='app__flex'
+                  >
+                    <AiFillEye />
+                  </motion.div>
+                </a>              
+                <a href={work.codeLink} target='_blank' rel='noreferrer'>
+                  <motion.div
+                    whileInView={{ scale: [0, 1]}}
+                    whileHover={{ scale: [1, 0.9]}}
+                    transition={{ duration: 0.25 }}
+                    className='app__flex'
+                  >
+                    <AiFillGithub />
+                  </motion.div>
+                </a>
+              </div>
+
+
+
+
+
+              {/* <motion.div
                 whileHover={{ opacity: [0,1]}}
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className='app__work-hover app__flex'
@@ -78,7 +111,7 @@ function Work() {
                   >
                     <AiFillEye />
                   </motion.div>
-                </a>
+                </a>              
                 <a href={work.codeLink} target='_blank' rel='noreferrer'>
                   <motion.div
                     whileInView={{ scale: [0, 1]}}
@@ -89,21 +122,28 @@ function Work() {
                     <AiFillGithub />
                   </motion.div>
                 </a>
-              </motion.div>
+              </motion.div> */}
             </div>
 
             <div className='app__work-content app__flex'>
-              <h4 className='bold-text-green'>{work.title}</h4>
-              <p className='p-text' style={{marginTop: 10}}>{work.description}</p>
+              <h4 className='bold-text'>{work.title}</h4>
+              <p className='p-text-dark app__work-desc'>{work.description}</p>
 
               <div className='app__work-tag app__flex'>
-                <p className='p-text'>{work.tags[0]}</p>
+                <p className='p-text-dark'>{work.tags[0]}</p>
               </div>
             </div>
           </div>
         )}
 
       </motion.div>
+      <a href="https://github.com/aygenyucel" target='_blank' className='check-github-a'>
+        <div className='check-github-div'>
+          <div>Check my GitHub for my other projects! </div>
+          <img src={images.rightArrow} alt="right-arrow-icon" className='right-arrow-icon' />
+        </div>
+      </a>
+      
 
     </>
     
@@ -113,5 +153,5 @@ function Work() {
 export default AppWrap(
   MotionWrap(Work, 'app__works'),
   'work',
-  'app__grey1bg'
+  'app__lightbluebg'
 );

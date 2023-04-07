@@ -32,8 +32,8 @@ const About = () => {
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
-            <h2 className="bold-text-green" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text-green" style={{ marginTop: 10 }}>{about.description}</p>
+            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
+            <p className="p-text-dark" style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>
         ))}
 
@@ -45,5 +45,5 @@ const About = () => {
 export default AppWrap(
   MotionWrap(About, 'app__about'),
   'about',
-  'app__green2bg'
+  'app__darkbluebg'
 );

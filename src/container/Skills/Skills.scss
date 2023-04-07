@@ -5,12 +5,11 @@
 }
 
 .app__skills-container {
-    width: 100%;
+    
+    width: 700px;
     margin-top: 3rem;
 
     display: flex;
-    flex-direction: row;
-    
 
     @media screen and (max-width: 900px) {
         width: 100%;
@@ -22,9 +21,8 @@
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 5rem;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 900px) {
         margin-right: 0;
@@ -44,7 +42,7 @@
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        background-color: rgba(163,185,155, 0.3); //#87b5d6
+        background-color: var(--blue1-color);
 
         img {
             width: 50%;
@@ -52,7 +50,7 @@
 
         }
         &:hover {
-            box-shadow: 0 0 15px #fef4f5;
+            box-shadow: 0 0 15px rgba(0,0,0,0.7);
         }
     }
 
@@ -119,11 +117,11 @@
 }
 
 .app__experiences-year {
-    margin-right: 3rem;
+    margin-right: 2rem;
+
 
     p {
         font-weight: 800;
-        color: var(--white-color);
     }
 
     @media screen and (max-width: 450px) {
