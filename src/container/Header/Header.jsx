@@ -48,15 +48,7 @@ function Header() {
           <a href='#contact'>
             <button className='app__header-button p-text-light'>Contact</button>
           </a>
-          
         </div>
-
-        <div className='app__header-resume'>
-          <a href='aygenyucelcv.pdf' download= 'Aygen_Yucel_Resume.pdf'>
-            <button className='app__header-button p-text-light'>Download Resume</button>
-          </a>
-        </div>
-      
       </motion.div>
       
       
